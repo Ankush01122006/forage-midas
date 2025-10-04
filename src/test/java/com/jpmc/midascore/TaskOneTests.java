@@ -19,7 +19,7 @@ class TaskOneTests {
         logger.info("submit the following output to complete the task (include begin and end output denotations)");
         StringBuilder output = new StringBuilder("\n").append("---begin output ---").append("\n");
         for (int i = 0; i < 10; i++) {
-            output.append(String.valueOf((int) Math.floor(Math.pow(i, i))));
+            output.append((int) Math.floor(Math.pow(i, i)));
         }
         output.append("\n").append("---end output ---");
         logger.info(output.toString());
@@ -27,3 +27,4 @@ class TaskOneTests {
     }
 
 }
+
