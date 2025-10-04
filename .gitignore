@@ -1,10 +1,15 @@
-.idea/
-
-HELP.md
-target/
+# Maven wrapper
 !.mvn/wrapper/maven-wrapper.jar
+
+# Ignore build/target folders except source-specific
+target/
 !**/src/main/**/target/
 !**/src/test/**/target/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IDEs
 
 ### STS ###
 .apt_generated
@@ -16,7 +21,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -27,9 +32,10 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
+
+# Other
+HELP.md
+
